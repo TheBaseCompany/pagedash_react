@@ -49,6 +49,7 @@
     "hot-hook": "^0.2.6",
     "pino-pretty": "^11.2.1",
     "prettier": "^3.3.2",
+    "sass": "^1.77.8",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5",
     "vite": "^5.3.1"
@@ -63,6 +64,7 @@
     "@adonisjs/shield": "^8.1.1",
     "@adonisjs/static": "^1.1.1",
     "@adonisjs/vite": "^3.0.0",
+    "@carbon/react": "^1.62.1",
     "@inertiajs/react": "^1.2.0",
     "@libsql/sqlite3": "^0.3.1",
     "@vinejs/vine": "^2.1.0",
