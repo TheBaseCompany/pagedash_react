@@ -11,7 +11,7 @@ export default function PLink({ value = 'Button' }: PLinkProp) {
 
   return (
     <div style={{ position: 'relative', display: 'inline-block' }}>
-      <Link renderIcon={() => <ArrowRight aria-label="Arrow Right" />}>
+      <Link size="lg" renderIcon={() => <ArrowRight aria-label="Arrow Right" />}>
         <span contentEditable onBlur={(e) => setButtonText(e.target.innerText)}>
           {buttonText}
         </span>

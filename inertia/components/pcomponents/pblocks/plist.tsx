@@ -8,7 +8,7 @@ export default function PList() {
     <div className="bg-white">
       <div className="px-8 py-16 flex flex-col gap-8 page-margin">
         <PText value="Use cases" />
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <ClickableTile renderIcon={ArrowRight}>
             <PText variant="h5" value="Startup" />
             <br />

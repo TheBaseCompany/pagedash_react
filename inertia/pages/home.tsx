@@ -17,6 +17,7 @@ import PHero from '~/components/pcomponents/pblocks/phero'
 import PFeature from '~/components/pcomponents/pblocks/pfeature'
 import SelectedBlockLayout from '~/components/selected_block_layout'
 import PList from '~/components/pcomponents/pblocks/plist'
+import PListImage from '~/components/pcomponents/pblocks/plist_image'
 
 export default function Home(props: { version: number; userName: string }) {
   return (
@@ -47,6 +48,7 @@ export default function Home(props: { version: number; userName: string }) {
         <SelectedBlockLayout>
           <PHero />
         </SelectedBlockLayout>
+        <PListImage />
         <SelectedBlockLayout>
           <PList />
         </SelectedBlockLayout>
