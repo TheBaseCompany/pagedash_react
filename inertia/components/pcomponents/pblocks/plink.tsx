@@ -1,22 +1,21 @@
 import { ArrowRight } from '@carbon/icons-react'
-import { Button } from '@carbon/react'
+import { Link } from '@carbon/react'
 import { useState } from 'react'
 
-interface PButtonProp {
+interface PLinkProp {
   value: string
-  variant: 'primary' | 'secondary' | 'tertiary' 
 }
 
-export default function PButton({ value = 'Button', variant = 'primary' }: PButtonProp) {
+export default function PLink({ value = 'Button' }: PLinkProp) {
   const [buttonText, setButtonText] = useState(value)
 
   return (
     <div style={{ position: 'relative', display: 'inline-block' }}>
-      <Button className="w-full md:w-auto" kind={variant} renderIcon={ArrowRight}>
+      <Link renderIcon={() => <ArrowRight aria-label="Arrow Right" />}>
         <span contentEditable onBlur={(e) => setButtonText(e.target.innerText)}>
           {buttonText}
         </span>
-      </Button>
+      </Link>
     </div>
   )
 }
